@@ -1,0 +1,32 @@
+{
+  "lib/ERC721A": {
+    "tag": {
+      "name": "v4.3.0",
+      "rev": "6f8a82a7b2833ad8b2fc7b54349281143a731fdd"
+    }
+  },
+  "lib/chainlink-ccip": {
+    "tag": {
+      "name": "contracts-ccip-v2.0.0",
+      "rev": "c2c125c27f056db2e98d21501922b6eff5750f36"
+    }
+  },
+  "lib/chainlink-evm": {
+    "tag": {
+      "name": "contracts-v1.5.0",
+      "rev": "86aa5a1d34b20eda8d18fe6eb0e4882948e545ba"
+    }
+  },
+  "lib/chainlink-local": {
+    "tag": {
+      "name": "v0.3.0",
+      "rev": "5e63b9151ee4626f1d24ea4c7c35981edd0e75c8"
+    }
+  },
+  "lib/openzeppelin-contracts": {
+    "tag": {
+      "name": "v5.7.0",
+      "rev": "cab19933c33c2ad1d4c7a84864a3601dddfd16f3"
+    }
+  }
+}

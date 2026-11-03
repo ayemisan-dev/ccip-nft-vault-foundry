@@ -1,0 +1,18 @@
+# Foundry
+out/
+cache/
+broadcast/
+artifacts/
+
+# Environment
+.env
+.env.*
+!.env.example
+*.key
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
