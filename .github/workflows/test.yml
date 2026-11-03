@@ -11,6 +11,9 @@ env:
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
+    env:
+      SEPOLIA_RPC_URL: ${{ secrets.SEPOLIA_RPC_URL }}
+      ARBITRUM_SEPOLIA_RPC_URL: ${{ secrets.ARBITRUM_SEPOLIA_RPC_URL }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -30,8 +33,5 @@ jobs:
         run: forge test --no-match-path "test/fork/*" -vv
 
       - name: Run fork tests (optional, needs secrets)
-        if: ${{ secrets.SEPOLIA_RPC_URL != '' }}
-        env:
-          SEPOLIA_RPC_URL: ${{ secrets.SEPOLIA_RPC_URL }}
-          ARBITRUM_SEPOLIA_RPC_URL: ${{ secrets.ARBITRUM_SEPOLIA_RPC_URL }}
+        if: ${{ env.SEPOLIA_RPC_URL != '' }}
         run: forge test --match-path "test/fork/*" -vv
